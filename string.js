@@ -1,3 +1,28 @@
+//По ТЗ:
+
+function showVerticalMessage(str) {
+
+        const truncateWord = str.slice(1, 10);
+        let message;
+
+        if (str.startsWith('m') || str.startsWith('м')) {
+                message = str[0].toUpperCase() + truncateWord;
+        } else {
+                message = str[0] + truncateWord;
+        }
+
+        for (const char of message) {
+                console.log(char);
+        }
+}
+
+
+showVerticalMessage('rabbit');
+showVerticalMessage('mosquitoabcdefg');
+
+
+//Не по ТЗ:
+
 function showVerticalMessage(str, maxlength) {
         
         let firstLetter;
